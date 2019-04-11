@@ -7,8 +7,7 @@
  */
 class DB_connect_Local extends mysqli
 {
-    private $par_con = array('localhost', 'root', '4fl4cP3n6u1n', 'mail_socket_app');
-      // private $par_con =  array('local_address', 'local__user', 'local__pass', 'local_DB');
+      private $par_con =  array('local_address', 'local__user', 'local__pass', 'local_DB');
 
     public function __construct()
     {

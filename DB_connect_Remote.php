@@ -8,9 +8,7 @@
 class DB_connect_Remote extends mysqli
 {
 
-    private $par_con = array('72.249.108.227', 'finsum_userDB16', 'z0E214h5Pn0z', 'finsum_cp_live');
-
-    // private $par_con =  array('remote address', 'remote_user', 'remote_pass', 'remote_DB');
+    private $par_con =  array('remote address', 'remote_user', 'remote_pass', 'remote_DB');
 
 
     public function __construct()
