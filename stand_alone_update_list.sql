@@ -23,10 +23,8 @@ CREATE TABLE `stand_alone_update_list` (
 -- ----------------------------
 -- Records of stand_alone_update_list
 -- ----------------------------
-INSERT INTO `stand_alone_update_list` VALUES ('1', 'fsj_acymailing_urlclick', 'date', '0', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('2', 'k2_items_acymailin_relation', 'id', '1', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('3', 'fsj_k2_items', 'id', '1', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('4', 'fsj_k2_categories', 'id', '1', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('5', 'fsj_k2_tags', 'id', '1', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('6', 'fsj_k2_tags_xref', 'id', '1', 'DESC', '1');
+INSERT INTO `stand_alone_update_list` VALUES ('1', 'table1', 'date', '0', 'DESC', '1');
+INSERT INTO `stand_alone_update_list` VALUES ('2', 'table2', 'id', '1', 'ASC', '1');
+INSERT INTO `stand_alone_update_list` VALUES ('3', 'table3', 'id', '1', 'DESC', '1');
+ 
 
