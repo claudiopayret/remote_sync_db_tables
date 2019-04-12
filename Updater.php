@@ -24,22 +24,12 @@ class Updater
 
 
     public function update($limit=0){
-
-
         $result_local = $this->DB_layer_local->select_list_update();
-
         if ($result_local) {
-
             echo "<br>  LOCAL update list parameters \n ";
+
             while ($rows = $result_local->fetch_object()) {
-                $this->table_name_temp=$rows->table_name;
-                /*   if (!isset($this->db_table_schema_info[$this->table_name_temp])){
-
-
-                     $this->db_table_schema_info[$this->table_name_temp]=$this->DB_layer_local->get_table_squema_info($this->table_name_temp);
-                }*/
-
-
+                $this->table_name_temp=$rows->table_name;   
 
                $last_position=$this->DB_layer_local->get_last_position($rows->table_name,$rows->field);
                    if (!$last_position){$last_position=0;}
@@ -63,7 +53,6 @@ class Updater
 
                         }
 
-
                       $counter++;
                         echo "$counter   --- ";
 
@@ -84,12 +73,7 @@ class Updater
     }
 
     private function get_lastposition_local(){
-
-
-
-
     }
-
 
   public function testing_local(){
       $result = $this->DB_layer_local->select_mailid_to_process();
@@ -116,6 +100,5 @@ class Updater
 
 
     }
-
 
 }
