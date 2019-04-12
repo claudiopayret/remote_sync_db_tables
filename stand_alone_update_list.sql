@@ -29,6 +29,4 @@ INSERT INTO `stand_alone_update_list` VALUES ('3', 'fsj_k2_items', 'id', '1', 'D
 INSERT INTO `stand_alone_update_list` VALUES ('4', 'fsj_k2_categories', 'id', '1', 'DESC', '1');
 INSERT INTO `stand_alone_update_list` VALUES ('5', 'fsj_k2_tags', 'id', '1', 'DESC', '1');
 INSERT INTO `stand_alone_update_list` VALUES ('6', 'fsj_k2_tags_xref', 'id', '1', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('7', 'RIADatabaseSelectedContactEmails', 'id_temp', '1', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('8', 'fsj_content_statistics', 'id', '1', 'DESC', '1');
-INSERT INTO `stand_alone_update_list` VALUES ('9', 'fsj_acymailing_subscriber', 'subid', '1', 'DESC', '1');
+
