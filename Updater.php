@@ -13,15 +13,12 @@ class Updater
     private $DB_layer_remote;
     public  $db_table_schema_info;
     private $table_name_temp;
-
-
     public function __construct()
     {
 
         $this->DB_layer_local=new DB_connect_Local();
         $this->DB_layer_remote=new DB_connect_Remote();
     }
-
 
     public function update($limit=0){
         $result_local = $this->DB_layer_local->select_list_update();
@@ -46,32 +43,22 @@ class Updater
                     unset($values_real_escape_string);
                     while ($rows = $select_remote_data->fetch_object()) {
 
-
                         foreach ($rows  as $key => $values) {
 
                             $values_real_escape_string[$key]= $this->DB_layer_local->real_escape_string($values);
 
                         }
-
                       $counter++;
                         echo "$counter   --- ";
 
                       echo "\n affected : ".$this->DB_layer_local->insert_local($this->table_name_temp,$values_real_escape_string);
-
-
                     }
-
-
                 }
-
-
-
 
             }
         }
 
     }
-
     private function get_lastposition_local(){
     }
 
@@ -92,7 +79,6 @@ class Updater
             }
         }
     }
-
     public function __destruct(){
 
         $this->DB_layer_local->close();
